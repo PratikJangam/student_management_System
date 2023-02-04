@@ -1,0 +1,61 @@
+.table_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.table {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: 1rem;
+
+}
+
+
+
+/* tr {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+tr:first-child {
+    background-color: #F33823;
+
+} */
+
+th {
+    background-color: #F33823;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+    width: 1%;
+}
+
+td {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.table button {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.table a {
+    text-decoration: underline;
+    color: #000000;
+}

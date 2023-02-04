@@ -1,0 +1,32 @@
+.navbar {
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+}
+
+.nav_data {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+    padding: 1.5rem;
+    /* border: 1px solid red; */
+}
+
+.nav_data p:first-child {
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.nav_data p {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+}

@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.navbar h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    color: rgba(88, 74, 74, 0.74);
+}
+
+.navbar p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.navbar div {
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background: #FFFCFB;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.sidebar {
+    margin-top: 6rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    font-family: 'IBM Plex Sans';
+    justify-content: center;
+    position: fixed;
+}
+
+
+
+.sidebar a {
+    align-items: center;
+    padding: 12px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    cursor: pointer;
+    /* background-color: transparent; */
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #F33823;
+}
+
+.sidebar a svg {
+    background-color: transparent;
+}
+
+.sidebar button {
+    align-items: center;
+    padding: 12px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}

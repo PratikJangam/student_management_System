@@ -1,0 +1,11 @@
+.layout {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wrapper {
+    width: 80%;
+    border: 1px solid red;
+    margin: 1rem;
+
+}
