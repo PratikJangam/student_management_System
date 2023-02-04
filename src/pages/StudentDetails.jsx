@@ -2,12 +2,7 @@ import React, { Suspense } from "react";
 import StudentDetails from "../components/StudentDetails";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../connection/firebase";
-import {
-  Await,
-  json,
-  useLoaderData,
-  useRouteLoaderData,
-} from "react-router-dom";
+import { Await, json, useRouteLoaderData } from "react-router-dom";
 
 const StudentDetailsPage = () => {
   const student = useRouteLoaderData("student-details");

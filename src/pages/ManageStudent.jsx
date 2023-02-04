@@ -1,19 +1,11 @@
 import React, { Suspense } from "react";
-import {
-  Await,
-  defer,
-  json,
-  redirect,
-  useLoaderData,
-  useRouteLoaderData,
-} from "react-router-dom";
+import { Await, redirect, useLoaderData } from "react-router-dom";
 import ManageStudent from "../components/ManageStudent";
 import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import { db } from "../connection/firebase";
 
 const ManageStudentPage = () => {
   const students = useLoaderData();
-  // console.log(students);
 
   return (
     <>

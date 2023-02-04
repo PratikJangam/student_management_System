@@ -1,27 +1,17 @@
 import React from "react";
 import classes from "./ManageStudent.module.css";
-import Table from "rc-table";
 
-import {
-  Link,
-  redirect,
-  useLoaderData,
-  useRouteLoaderData,
-  useSubmit,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../connection/firebase";
-import { useEffect } from "react";
 
 const ManageStudent = ({ students }) => {
-  // console.log(students);
   const user = localStorage.getItem("user");
   const userData = JSON.parse(user);
-  const submit = useSubmit();
 
   let data = [];
   students.map((student) => {
-    data.push({
+    return data.push({
       name: `${student.firstname} ${student.middlename} ${student.lastname}`,
       class: `${student.class}-${student.div}`,
       rollno: student.rollno,
@@ -29,14 +19,11 @@ const ManageStudent = ({ students }) => {
       id: student.id,
     });
   });
-  // console.log(students);
-  // console.log(data);
 
   async function deleteStudent(id) {
     const proceed = window.confirm("Are you sure?");
 
     if (proceed) {
-      // submit(null, { method: "delete" });
       try {
         await deleteDoc(doc(db, userData.uid, id));
       } catch (error) {
@@ -49,7 +36,6 @@ const ManageStudent = ({ students }) => {
     <>
       <div className={classes.table_wrapper}>
         <div className={classes.table}>
-          {/* <Table columns={columns} data={data} /> */}
           <tr>
             <th>Name</th>
             <th>Class</th>

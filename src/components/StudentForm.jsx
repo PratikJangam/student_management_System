@@ -5,7 +5,6 @@ import {
   redirect,
   useActionData,
   useLoaderData,
-  useNavigate,
   useNavigation,
 } from "react-router-dom";
 import classes from "./StudentForm.module.css";
@@ -26,7 +25,7 @@ const StudentForm = ({ method, student }) => {
     setEnteredRollNo(event.target.value);
   };
   const submitHandler = () => {
-    students.map((student) => {
+    students.forEach((student) => {
       if (student.rollno === enteredRollNo) {
         isPresent = true;
       }
