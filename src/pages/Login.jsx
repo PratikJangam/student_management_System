@@ -34,8 +34,8 @@ export async function action({ request }) {
       // ...
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
     });
 
   return redirect("/");
